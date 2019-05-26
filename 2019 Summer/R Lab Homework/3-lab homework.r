@@ -14,12 +14,40 @@ examdata <- data.frame(
 )
 
 ## Compute the mean of each variable using the "slow way."
+#exam1 mean
+sum.of.scores <- sum(class.data$exam1)
+sum.of.scores
+n <- length(class.data$exam1)
+n
+slow.mean <- sum.of.scores / n
+slow.mean
+
+#exam2 mean
+sum.of.scores2 <- sum(class.data$exam2)
+sum.of.scores
+n <- length(class.data$exam2)
+n
+slow.mean2 <- sum.of.scores2 / n
+slow.mean2
 
 
 ## Compute the mean of each variable either using the super fast or the extra super fast ways.
+#superfast mean exam1
+mean(class.data$exam1)
+
+#superfast mean exam2
+mean(class.data$exam2)
 
 
 ## Compute the median of each of the two variables in the data frame using "slow way."
+#median exam1
+sortede.values <- sort(class.data$exam1)
+sortede.values[n/2]
+
+#median exam2
+sortede.values <-(class.data$exam2)
+sortede.values[n/2]
+
 
 
 ## Compute the median of each of the two variables in the data frame using "fast way."
